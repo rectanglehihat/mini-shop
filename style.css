@@ -1,0 +1,91 @@
+:root {
+  /* color */
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+
+  /* Size */
+  --padding: 12px;
+  --radius: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-black);
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* image button */
+.clothes {
+  display: flex;
+}
+
+.shirts {
+  margin: var(--padding);
+}
+
+.pants {
+  margin: var(--padding);
+}
+
+.skirt {
+  margin: var(--padding);
+}
+
+/* color button */
+.color {
+  display: flex;
+}
+
+.color .blue {
+  background-color: var(--color-blue);
+  padding: var(--padding);
+  margin: 6px;
+  border-radius: var(--radius);
+}
+.color .yellow {
+  background-color: var(--color-yellow);
+  padding: var(--padding);
+  margin: 6px;
+  border-radius: var(--radius);
+}
+.color .pink {
+  background-color: var(--color-pink);
+  padding: var(--padding);
+  margin: 6px;
+  border-radius: var(--radius);
+}
+
+/* item list */
+.list {
+  background-color: var(--color-light-grey);
+  display: flex;
+  align-items: center;
+  border-radius: calc(var(--radius) * 1.5);
+}
+
+.list .item {
+  padding: var(--padding);
+}
